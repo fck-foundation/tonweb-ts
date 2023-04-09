@@ -127,6 +127,10 @@ class Slice {
         return this.loadVarUint(16);
     }
 
+    /**
+     * 
+     * @returns {Address}
+     */
     loadAddress() {
         const b = this.loadUint(2);
         if (b.toNumber() === 0) return null; // null address

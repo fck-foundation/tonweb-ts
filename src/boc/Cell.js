@@ -161,6 +161,9 @@ class Cell {
         );
     }
 
+    /**
+     * @returns {Slice}
+     */
     beginParse() {
         const refs = this.refs.map(ref => ref.beginParse());
         return new Slice(this.bits.array.slice(), this.bits.length, refs);

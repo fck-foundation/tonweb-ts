@@ -1,4 +1,5 @@
-import { BitString } from './bit-string';
+import { BitString } from './bit-string'; 
+import { Slice } from './slice';
 export declare class Cell {
     readonly bits: BitString;
     isExotic: (number | false);
@@ -51,6 +52,10 @@ export declare class Cell {
      * @todo: add description
      */
     hash(): Promise<Uint8Array>;
+    /**
+     * @todo: add description
+     */
+    beginParse(): Slice
     /**
      * Recursively prints cell's content like in Fift.
      */

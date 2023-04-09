@@ -32,11 +32,11 @@ class BitString {
     }
 
     /**
-     * @param n {number}
-     * @return {boolean}    bit value at position `n`
+     * @param index {number}
+     * @return {boolean}    bit value at position `index`
      */
-    get(n) {
-        return (this.array[(n / 8) | 0] & (1 << (7 - (n % 8)))) > 0;
+    get(index) {
+        return (this.array[(index / 8) | 0] & (1 << (7 - (index % 8)))) > 0;
     }
 
     /**
@@ -50,30 +50,30 @@ class BitString {
     }
 
     /**
-     * Set bit value to 1 at position `n`
-     * @param n {number}
+     * Set bit value to 1 at position `index`
+     * @param index {number}
      */
-    on(n) {
-        this.checkRange(n);
-        this.array[(n / 8) | 0] |= 1 << (7 - (n % 8));
+    on(index) {
+        this.checkRange(index);
+        this.array[(index / 8) | 0] |= 1 << (7 - (index % 8));
     }
 
     /**
-     * Set bit value to 0 at position `n`
-     * @param n {number}
+     * Set bit value to 0 at position `index`
+     * @param index {number}
      */
-    off(n) {
-        this.checkRange(n);
-        this.array[(n / 8) | 0] &= ~(1 << (7 - (n % 8)));
+    off(index) {
+        this.checkRange(index);
+        this.array[(index / 8) | 0] &= ~(1 << (7 - (index % 8)));
     }
 
     /**
-     * Toggle bit value at position `n`
-     * @param n {number}
+     * Toggle bit value at position `index`
+     * @param index {number}
      */
-    toggle(n) {
-        this.checkRange(n);
-        this.array[(n / 8) | 0] ^= 1 << (7 - (n % 8));
+    toggle(index) {
+        this.checkRange(index);
+        this.array[(index / 8) | 0] ^= 1 << (7 - (index % 8));
     }
 
     /**
@@ -201,7 +201,6 @@ class BitString {
             this.writeUint(amount, l * 8);
         }
     }
-
 
     /**
      * @param amount  {number | BN} in nanotons
