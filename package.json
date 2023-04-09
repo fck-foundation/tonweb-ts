@@ -1,7 +1,7 @@
 {
-  "name": "tonweb",
+  "name": "tonweb-ts",
   "version": "0.0.60",
-  "description": "TonWeb - JavaScript API for TON blockchain",
+  "description": "TonWeb - TypeScript API for TON blockchain",
   "main": "src/index.js",
   "types": "dist/types/index.d.ts",
   "scripts": {
@@ -19,11 +19,14 @@
     },
     {
       "name": "tolya-yanot"
+    },
+    {
+      "name": "beycoder"
     }
   ],
   "license": "GPL-3.0",
   "bugs": {
-    "url": "https://github.com/toncenter/tonweb/issues"
+    "url": "https://github.com/fck-foundation/tonweb-ts/issues"
   },
   "homepage": "https://github.com/toncenter/tonweb#readme",
   "repository": "https://github.com/toncenter/tonweb",
@@ -41,7 +44,7 @@
     "@sinonjs/fake-timers": "^9.1.1",
     "buffer": "6.0.3",
     "webpack": "5.70.0",
-    "webpack-cli": "4.10.0"
+    "webpack-cli": "^4.10.0"
   },
   "browser": {
     "node-fetch": false
