@@ -54,7 +54,7 @@ class BitString {
      * @param index {number}
      */
     on(index) {
-        this.checkRange(index);
+        // this.checkRange(index);
         this.array[(index / 8) | 0] |= 1 << (7 - (index % 8));
     }
 
@@ -63,7 +63,7 @@ class BitString {
      * @param index {number}
      */
     off(index) {
-        this.checkRange(index);
+        // this.checkRange(index);
         this.array[(index / 8) | 0] &= ~(1 << (7 - (index % 8)));
     }
 
@@ -72,7 +72,7 @@ class BitString {
      * @param index {number}
      */
     toggle(index) {
-        this.checkRange(index);
+        // this.checkRange(index);
         this.array[(index / 8) | 0] ^= 1 << (7 - (index % 8));
     }
 

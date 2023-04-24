@@ -42,7 +42,7 @@ class Slice {
      * @return {boolean}    bit value at position `n`
      */
     get(n) {
-        this.checkRange(n);
+        // this.checkRange(n);
         return (this.array[(n / 8) | 0] & (1 << (7 - (n % 8)))) > 0;
     }
 
