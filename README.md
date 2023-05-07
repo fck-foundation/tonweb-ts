@@ -1,12 +1,10 @@
-![splash_js_sdk](https://user-images.githubusercontent.com/1449561/154848382-e89fef68-3aee-4ca6-8d52-1466bfdf2c89.png)
+# TonWeb - TypeScript SDK for [The Open Network](https://ton.org)
 
-# TonWeb - JavaScript SDK for [The Open Network](https://ton.org)
-
-[![NPM](https://img.shields.io/npm/v/tonweb.svg)](https://www.npmjs.org/package/tonweb)
+[![NPM](https://img.shields.io/npm/v/tonweb.svg)](https://www.npmjs.org/package/@fck-foundation/tonweb-ts)
 
 ## Install Web
 
-`npm install tonweb` or `yarn add tonweb`
+`npm install @fck-foundation/tonweb-ts` or `yarn add @fck-foundation/tonweb-ts`
 
 ```js
 import TonWeb from "tonweb";
@@ -92,15 +90,15 @@ const tonweb = new TonWeb(new TonWeb.HttpProvider('https://testnet.toncenter.com
 
 Each part is documented separately:
 
-[tonweb](https://github.com/toncenter/tonweb/blob/master/src/README.md) - root class and methods
+[tonweb](https://github.com/fck-foundation/tonweb/blob/master/src/README.md) - root class and methods
 
-[tonweb-contract-wallet](https://github.com/toncenter/tonweb/blob/master/src/contract/wallet/README.md) - interaction with wallet's smart contracts.
+[tonweb-contract-wallet](https://github.com/fck-foundation/tonweb/blob/master/src/contract/wallet/README.md) - interaction with wallet's smart contracts.
 
-[tonweb-contract](https://github.com/toncenter/tonweb/blob/master/src/contract/README.md) - abstract interface to interact with TON smart contracts.
+[tonweb-contract](https://github.com/fck-foundation/tonweb/blob/master/src/contract/README.md) - abstract interface to interact with TON smart contracts.
 
-[tonweb-boc](https://github.com/toncenter/tonweb/blob/master/src/boc/README.md) - serializations of Cell and BitString
+[tonweb-boc](https://github.com/fck-foundation/tonweb/blob/master/src/boc/README.md) - serializations of Cell and BitString
 
-[tonweb-utils](https://github.com/toncenter/tonweb/blob/master/src/utils/README.md) - work with TON Addresses, coin values, byte arrays, hex, hash functions.
+[tonweb-utils](https://github.com/fck-foundation/tonweb/blob/master/src/utils/README.md) - work with TON Addresses, coin values, byte arrays, hex, hash functions.
 
 
 **Also we use JSDoc in code**
