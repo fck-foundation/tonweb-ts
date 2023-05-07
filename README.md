@@ -1,7 +1,5 @@
 # TonWeb - TypeScript SDK for [The Open Network](https://ton.org)
 
-[![NPM](https://img.shields.io/npm/v/tonweb.svg)](https://www.npmjs.org/package/@fck-foundation/tonweb-ts)
-
 ## Install Web
 
 `npm install @fck-foundation/tonweb-ts` or `yarn add @fck-foundation/tonweb-ts`
